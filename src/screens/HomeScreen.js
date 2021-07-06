@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {View, Text} from 'react-native';
 import config from '../../config/config';
 import Categories from '../Components/Categories';
-import {API_KEY} from '@env';
+import TrendingNews from '../Components/TrendingNews';
 
 class HomeScreen extends Component {
   //   componentDidMount() {
@@ -13,6 +13,7 @@ class HomeScreen extends Component {
     return (
       <View>
         <Categories />
+        <TrendingNews />
         <Text>Home Screen</Text>
       </View>
     );

@@ -12,16 +12,23 @@ const categories = [
 ];
 
 class Categories extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+  state = {};
   render() {
     return (
-      <ScrollView horizontal={true}>
+      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
         {categories.map((category, index) => (
           <View key={index}>
-            <Text>{category}</Text>
+            <Text
+              style={{
+                padding: 10,
+                borderWidth: 1,
+                borderColor: 'black',
+                fontSize: 19,
+                margin: 10,
+                borderRadius: 10,
+              }}>
+              {category}
+            </Text>
           </View>
         ))}
       </ScrollView>
